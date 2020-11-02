@@ -1,0 +1,32 @@
+header.header
+    .container
+        .header-box
+            .header__logo.logo
+                img(src="img/logo.png", alt="")
+            .header__menu.button.button_blue
+                +svg({
+                    name: 'catalog'
+                })
+                span Каталог товаров
+            .header__search
+                input(type="text" placeholder="Поиск по товарам")
+                +svg({
+                    name: 'search'
+                })
+            .header__filters
+                span Магазины
+                span Моллы
+                span Модели
+                span Публикации 
+            .header__icon.icon
+                +svg({
+                    name: 'settings'
+                })
+                +svg({
+                    name: 'fav'
+                })
+                +svg({
+                    name: 'cart'
+                })
+            .header__login.button.button_blue
+                span Войти
